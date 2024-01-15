@@ -1,0 +1,32 @@
+###menampilkan
+GET http://127.0.0.1:3000/todos
+
+
+###menampilkan by id
+GET http://localhost:3000/todos/id
+
+
+###membuat
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "title": "Mengerjakan Tugas",
+    "task" : "todo App donk"
+}
+
+
+
+###Delete ##
+
+DELETE  http://localhost:3000/todos/65a540210d7a9488f326a25e
+
+
+#########PATCH###
+PATCH   http://localhost:3000/todos/65a540210d7a9488f326a25e
+Content-Type: application/json
+    
+{
+    "title" :"Tugas Hari ini",
+    "task" : "Memasak"
+}
